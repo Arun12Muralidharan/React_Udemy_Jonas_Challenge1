@@ -43,23 +43,20 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill name="HTML+CSS" emoji="😄" color="violet" />
-      <Skill name="Javascript" emoji="😜" color="yellow" />
-      <Skill name="Web Design" emoji="😍" color="green" />
-      <Skill name="Git and Github" emoji="😎" color="red" />
-      <Skill name="React" emoji="🏆" color="blue" />
-      <Skill name="Sass" emoji="❤️" color="orange" />
+      <Skill name="HTML+CSS 😄" color="violet" />
+      <Skill name="Javascript 😜" color="yellow" />
+      <Skill name="Web Design 😍" color="green" />
+      <Skill name="Git and Github 😎" color="red" />
+      <Skill name="React 🏆" color="blue" />
+      <Skill name="Sass ❤️" color="orange" />
     </div>
   );
 }
 
 function Skill(props) {
-  const style = props.color;
-
   return (
-    <div className="skill" style={{ backgroundColor: style }}>
+    <div className="skill" style={{ backgroundColor: props.color }}>
       <p>{props.name}</p>
-      <p>{props.emoji}</p>
     </div>
   );
 }
